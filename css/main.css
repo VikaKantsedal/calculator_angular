@@ -1,0 +1,77 @@
+body {
+    background: rgba(109, 232, 222, 0.15);
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+h2 {
+    margin: 0;
+    color: rgb(0, 81, 148);
+    text-align: center;
+}
+input {
+    font: 16px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #000;
+    border-radius: 6px;
+    border: 1px solid rgb(43, 38, 38);
+
+}
+.holder {
+    background: rgba(66, 66, 66, 0.5);
+    border: 1px solid rgb(43, 38, 38);
+    border-radius: 5px;
+    padding: 10px 5px 5px;
+    width: 295px;
+    margin: 20px auto;
+}
+#field {
+    font: 16px/16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: right;
+    padding: 10px;
+    height: 35px;
+    margin: 5px 0 5px 4px;
+    width: 271px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid rgb(43, 38, 38);
+}
+
+input[type="button"], input[type="reset"]{
+    text-align: center;
+    width: 60px;
+    margin: 5px;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: 1px solid rgb(43, 38, 38);
+    -webkit-transition: 0.3ms;
+    -moz-transition: 0.3ms ;
+    -ms-transition: 0.3ms ;
+    -o-transition: 0.3ms ;
+    transition: 0.3ms ;
+}
+#math:active, input[type="button"]:active, input[type="reset"]:active {
+    border: 1px solid rgb(43, 38, 38);
+}
+#math:focus, input[type="button"]:focus, input[type="reset"]:focus {
+    outline: none;
+}
+#math:hover, input[type="button"]:hover, input[type="reset"]:hover {
+    border: 1px solid rgb(0, 81, 148);
+    box-shadow: inset 0px 0px 5px 4px rgba(0, 81, 148, 0.2);
+}
+input[type="reset"] {
+    width: 130px;
+    margin-right: 0px;
+}
+#math {
+    font: 16px/16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    height: 25px;
+    margin: 5px 0 5px 4px;
+    width: 270px;
+    border-radius: 5px;
+    border: 1px solid rgb(43, 38, 38);
+
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script type="text/javascript" src="app/angular.min.js"></script>
+	<script type="text/javascript" src="app/app.js"></script>
+	<script type="text/javascript" src="app/InputsFactory.js"></script>
+	<script type="text/javascript" src="app/baseCtrl.js"></script>
+	<script type="text/javascript" src="app/mathCtrl.js"></script>
+
+</head>
+<body>
+<div class="holder" ng-controller="baseCtrl">
+	<h2>Calculator</h2>
+	<form action="#">
+		<div id="field">{{InputsFactory.rowValue}}</div>
+			<input type="reset" value="clear" data-ng-click="clear()">
+			<input type="button" value="{{input.value}}" data-ng-click="calculate(input.value)" data-ng-repeat="input in inputs">
+			<button id="math" data-ng-click="changeShow()">&dArr;</button>
+
+		<div ng-controller="mathCtrl" data-ng-show="InputsFactory.show">
+			<input type="button" value="{{input.value}}" data-ng-click="math(event)" data-ng-repeat="input in mathInputs">
+		</div>
+	</form>
+</div>
+</body>
+</html>
